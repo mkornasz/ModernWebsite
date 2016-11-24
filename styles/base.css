@@ -1,0 +1,10 @@
+body{
+    font-family: Verdana;
+}
+
+#main_image_div{
+    width: 100%;
+    height: 1000px;
+    background-repeat: repeat;
+    background-image: url("../images/fabric.png");
+}
