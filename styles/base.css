@@ -1,5 +1,6 @@
 body{
     font-family: Verdana;
+    color: #333;
 }
 
 #main_image_div{
@@ -7,4 +8,49 @@ body{
     height: 1000px;
     background-repeat: repeat;
     background-image: url("../images/fabric.png");
+}
+
+h1{
+    text-align: center;
+    font-weight:bold;
+    font-family: sans-serif;
+}
+
+p{
+    font-size: 16px;
+}
+
+.my_container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col-left{
+    width: 60%;
+    padding: 10px;
+    float: left;
+}
+
+.col-left img{
+    width: 50%;
+    border-radius: 100%;   
+}
+
+.col-right{
+    width: 40%;
+    padding: 10px;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-1, .col-2, .col-3{
+    width: 33%;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.clear { 
+     clear: left;
 }
