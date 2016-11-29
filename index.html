@@ -3,77 +3,262 @@
 <head>
     <title>Modern inspirational website</title>
     <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
         <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="scripts/jquery-3.1.1.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
 </head>
     <body>
-        <section id="HOME">
-   
-            <div class="my_container">
-        <div id="main_image_div".></div>
-                <div class="col-left">
-                    <img src="http://lorempixel.com/500/500/abstract" />
+        <header id="main_image_div">
+   <div class="div-overlay">
+            <div class="container"> 
+                <div class="row text-center">
+                <img id="header_img" class="more_space" src="images/header.png">
+                </div>
+                <div class="row centered">
+                <div class="col-md-6">
+                    <img class="round_img" src="http://lorempixel.com/500/500/abstract" />
                 </div>   
-                <div class="col-right">
+                <div class="col-md-4 col-md-offset-2" >
                     <h1>Get inspired!</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                    <a href="#" class="btn btn-primary"> Take A Tour</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat.</p>
+                    <a href="#" class="btn btn-tour"> Take A Tour</a>
+                </div>
+            </div>
+                </div>
+       </div>
+        </header>          
+        <section id="ABOUT"> 
+            <div class="container">
+                <div class="row more_space">
+            <h1>About us.</h1>
+                    <hr class="first">
+            <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet metus posuere, lobortis odio fringilla, sodales risus. Donec pulvinar massa eget lacus sollicitudin dapibus. Nullam dapibus iaculis lectus in facilisis. Integer eget euismod justo, in vestibulum tortor. Ut a suscipit lacus.         
+    </p>     </div>
+                <div class="row more_space">
+                <div class="col-md-4 text-center">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                    <h3>10.000 Views</h3>
+                    </div>
+                <div class="col-md-4 text-center">
+                    <i class="glyphicon glyphicon-user"></i>
+                    <h3>400 Users</h3>
+                    </div>
+                <div class="col-md-4 text-center">
+                    <i class="glyphicon glyphicon-equalizer"></i>
+                    <h3>150 Inspirations</h3>
+                    </div>
                 </div>
             </div>
         </section>
-        <div class="clear"></div>
-        <section id="ABOUT"> 
-            <div class="my_container">
-            <h1>About us.</h1>
-            <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet metus posuere, lobortis odio fringilla, sodales risus. Donec pulvinar massa eget lacus sollicitudin dapibus. Nullam dapibus iaculis lectus in facilisis. Integer eget euismod justo, in vestibulum tortor. Ut a suscipit lacus. Ut a arcu ut turpis dignissim ultricies. Praesent accumsan feugiat sem quis laoreet. Nulla sit amet nunc lacinia, ullamcorper eros at, convallis purus. Duis imperdiet augue ut tellus interdum finibus. Suspendisse arcu magna, dictum vitae varius at, accumsan sit amet eros. Aenean sodales mollis orci, sed sollicitudin erat ullamcorper nec. Duis et gravida justo. Praesent viverra velit massa, a dignissim odio porttitor suscipit. Ut a tellus vehicula, lacinia justo et, egestas arcu. Nullam eget lacinia est, id pharetra diam.        
-    </p>     
-            </div>
-        </section>
-        <section id="PEOPLE">           
-            <div class="my_container">
+        <section id="PEOPLE">   
+            <div class="people-overlay">
+            <div class="container">
             <h1>People.</h1>
+                    <hr class="first more_space">
+                <div class="row">
+                <div id="carousel-people" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-people" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-people" data-slide-to="1"></li>
+    <li data-target="#carousel-people" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active text-center">    
+            <img class="round_img center-block" src="http://lorempixel.com/200/200/business/?0" alt="people"/>
+      <div class="carousel-people-caption">
+    <h3>Mark, Moderator</h3>
+          <p>
+          "Maecenas scelerisque nunc nisl, in congue magna sodales a. Donec id leo ligula. Cras eget lorem turpis. Sed nec mauris eu neque ullamcorper hendrerit."
+          </p>
+      </div>
+    </div>
+   <div class="item text-center">    
+            <img class="round_img center-block" src="http://lorempixel.com/200/200/business/?1" alt="people"/>
+      <div class="carousel-people-caption">
+    <h3>Jack, Owner</h3>
+          <p>
+           "Aenean posuere elit sem, in volutpat dui dignissim non. Praesent imperdiet iaculis diam, ac consectetur est imperdiet a."
+          </p>
+      </div>
+    </div>
+<div class="item text-center">    
+            <img class="round_img center-block" src="http://lorempixel.com/200/200/business/?1" alt="people"/>
+      <div class="carousel-people-caption">
+    <h3>Gregory, Manager</h3>
+          <p>
+           " Cras ut est maximus, euismod lacus eu, ultricies justo. Phasellus hendrerit congue finibus. Vivamus molestie ligula sit amet pellentesque faucibus."
+          </p>
+      </div>
+    </div>                 
+                </div>
+            </div>
+                </div>
+                </div>
             </div>
         </section>
         <section id="INSPIRATIONS">
-            <div class="my_container">
+            <div class="container">
+                <div class="row">
             <h1>Inspirations.</h1>
-            <div class="col-1"> 
+                    <hr class="first">
+            <div class="col-md-4"> 
                 <h2>Art</h2>
+                <hr>
   <p>
         Aenean posuere elit sem, in volutpat dui dignissim non. Praesent imperdiet iaculis diam, ac consectetur est imperdiet a. Suspendisse potenti. Phasellus in nisi eget magna faucibus vestibulum. Maecenas urna dolor, euismod vel imperdiet a, eleifend sed purus. Vestibulum dapibus tempus elit sit amet interdum. Maecenas scelerisque nunc nisl, in congue magna sodales a. Donec id leo ligula.
     </p>
                 
                     <a href="#" class="btn btn-default"> More...</a>
                 </div>
-            <div class="col-2"> 
+            <div class="col-md-4"> 
                 <h2>Fashion</h2>
+                <hr>
     <p>
         Cras ut est maximus, euismod lacus eu, ultricies justo. Phasellus hendrerit congue finibus. Vivamus molestie ligula sit amet pellentesque faucibus. Sed ultricies lectus enim, ac semper ipsum mattis non. Nullam euismod mi id odio auctor aliquam. Suspendisse dictum leo sapien, ac tempor mi sagittis vitae. In maximus ac elit eu faucibus. Cras eget lorem turpis. Sed nec mauris eu neque ullamcorper hendrerit.
     </p>
                     <a href="#" class="btn btn-default"> More...</a>
                   </div>
-            <div class="col-3"> 
+            <div class="col-md-4"> 
                 <h2>Food</h2>
+                <hr>
             <p>
             Morbi pretium, quam non pretium sagittis, arcu magna mollis tortor, vel lobortis enim dui id metus. Suspendisse tempus, massa a pretium suscipit, nulla est consectetur leo, a posuere magna sem at eros. Nullam quis pellentesque mi. Proin est nisl, accumsan ac libero ac, pulvinar fermentum nunc. Vestibulum a urna rhoncus, euismod dolor eget, pellentesque quam. Donec sit amet turpis in tellus dignissim auctor. Nullam magna dui, fringilla sit amet consequat egestas, volutpat ut eros. Quisque mattis iaculis est eu vestibulum.
             </p>
                     <a href="#" class="btn btn-default"> More...</a>
                   </div>
             </div>
+            </div>
                 </section>
+            <section id="FEATURES">     
+                <div class="container">
+                     <h1>Features.</h1>
+                    <hr class="first">
+                                                <p class="more_space">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    
+<div class="features-inners more_space">
+    <div class="row">              
+        <div class="col-md-4">
+        <div class="left-feature ">
+                <div class="feature-icon">
+        <i class="glyphicon glyphicon-camera"></i>
+            </div>
+              <h3>Beautiful illustrations</h3>
+            </div>
+             <div class="left-feature">
+                <div class="feature-icon">
+                    <i class="glyphicon glyphicon-flash"></i>
+                 </div>
+                    <h3>Great inspirations</h3>
+            </div>
+            <div class="left-feature">
+                <div class="feature-icon">
+                    <i class="glyphicon glyphicon-bell"></i>
+                </div>
+                    <h3>Notifications</h3>
+            </div>
+            <div class="left-feature">
+                <div class="feature-icon">
+                    <i class="glyphicon glyphicon-print"></i>
+                </div>
+                    <h3>Printables</h3>
+            </div>
+        </div>
+         <div class="col-md-4">
+        <div class="center-feature centered">
+              <img class="feature_img" src="http://lorempixel.com/250/400/abstract" />
+        </div>
+        </div>
+         <div class="col-md-4">
+        <div class="left-feature">
+                <div class="feature-icon">
+                    <i class="glyphicon glyphicon-ice-lolly-tasted"></i>
+            </div>
+                    <h3>Make food</h3>
+            </div>
+             <div class="left-feature">
+                <div class="feature-icon">
+                    <i class="glyphicon glyphicon-sunglasses"></i>
+                 </div>
+                    <h3>Make fashion</h3>
+            </div>
+            <div class="left-feature">
+                <div class="feature-icon">
+                    <i class="glyphicon glyphicon-cd"></i>
+                </div>
+                    <h3>Make music</h3>
+            </div>
+            <div class="left-feature">
+                <div class="feature-icon">
+                    <i class="glyphicon glyphicon-picture"></i>
+                </div>
+                    <h3>Make art</h3>
+            </div>
+        </div>
+                  
+                </div>
+            </div>       
+        </div>        
+            </section>
             <section id="CONTACT">
-                <div class="my_container">
-                    <h1>Contact.</h1>
+                <div class="container">
+                    <h1>Contact us.</h1>
+                    <hr class="first">
                      <p>
-        Maecenas aliquet enim in libero imperdiet, ut auctor orci dapibus. Morbi aliquet congue nisl, ac faucibus diam condimentum ultrices. Aliquam bibendum libero in convallis porttitor. Nulla nec imperdiet quam. Donec vitae lacinia magna, at cursus purus. Aenean quis lacus vel felis suscipit tincidunt. Maecenas maximus dolor leo, in dignissim tellus varius eleifend. Maecenas posuere ornare bibendum. Donec aliquet dui ante, in convallis ante dignissim nec. Nunc scelerisque sagittis leo nec egestas. Proin et erat id nunc ullamcorper iaculis. Nam iaculis nunc ipsum, a elementum enim fermentum eu. In vel velit eget lectus blandit efficitur suscipit eget justo.
+        Maecenas aliquet enim in libero imperdiet, ut auctor orci dapibus. Morbi aliquet congue nisl, ac faucibus diam condimentum ultrices. Aliquam bibendum libero in convallis porttitor. 
     </p>
+                    <form class="more_space">
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input id="name" class="form-control" type="text">
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input id="email" class="form-control" type="text">
+		</div>
+         <div class="form-group">
+			<label for="textEmail">Text</label>
+			<textarea id="textEmail" class="form-control"></textarea>
+		</div>               
+		<div class="form-group">
+			<label for="phone">Phone</label>
+			<input id="phone" class="form-control" type="text">
+		</div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
                 </div>
         </section>
         </body>
+       <section id="FOLLOW">     
+                <div class="container">
+                     <h1>Follow us.</h1>
+                    <hr class="first">
+                    <div class="row centered more_space">
+                    <div class="col-md-3">
+                        <h2>We're on:</h2>
+                        </div>
+                    <div class="col-md-2 col-md-offset-2">
+                    insta
+                    </div>
+                         <div class="col-md-2">
+                    twitter
+                    </div>
+                         <div class="col-md-2">
+                    fb
+                    </div>
+                    </div>
+                </div>
+            </section>
     <footer>
+        <div class="container">
         Website made for training.
         Background pattern from subtlepatterns.com
+            </div>
     </footer>
 </html>
